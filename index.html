@@ -8,6 +8,73 @@
   </head>
   <body>
     <canvas></canvas>
+    <div class="input-container">
+      <div class="first-row">
+        <input id="line-width" type="range" min="1" max="20" value="5" />
+        <span id="width-value">5</span>
+        <button id="mode-btn">브러시</button>
+        <button id="eraser-btn">지우개</button>
+        <button id="reset-btn">전체 삭제</button>
+      </div>
+      <div class="second-row">
+        <input type="color" id="color" />
+        <div
+          class="color-option"
+          style="background-color: #2ecc71"
+          data-color="#2ecc71"
+        ></div>
+        <div
+          class="color-option"
+          style="background-color: #3498db"
+          data-color="#3498db"
+        ></div>
+        <div
+          class="color-option"
+          style="background-color: #9b59b6"
+          data-color="#9b59b6"
+        ></div>
+        <div
+          class="color-option"
+          style="background-color: #2c3e50"
+          data-color="#2c3e50"
+        ></div>
+        <div
+          class="color-option"
+          style="background-color: #f1c40f"
+          data-color="#f1c40f"
+        ></div>
+        <div
+          class="color-option"
+          style="background-color: #e67e22"
+          data-color="#e67e22"
+        ></div>
+        <div
+          class="color-option"
+          style="background-color: #e74c3c"
+          data-color="#e74c3c"
+        ></div>
+        <div
+          class="color-option"
+          style="background-color: #ecf0f1"
+          data-color="#ecf0f1"
+        ></div>
+        <div
+          class="color-option"
+          style="background-color: #f39c12"
+          data-color="#f39c12"
+        ></div>
+        <div
+          class="color-option"
+          style="background-color: #c0392b"
+          data-color="#c0392b"
+        ></div>
+      </div>
+      <div class="third-row">
+        <!-- accept="image/*" 속성을 넣으면 확장자 상관없이 이미지 파일만 받겠다는 뜻이며 파일 선택창에서 이미지 확장자가 우선 표시되도록 설정된다. -->
+        <input type="file" id="file" accept="image/*" />
+      </div>
+    </div>
+
     <script src="app.js"></script>
   </body>
 </html>
